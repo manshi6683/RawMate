@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | RawMate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-purple-200 min-h-screen flex items-center justify-center">
+
+  <!-- 🧠 Login Card -->
+  <div class="bg-white shadow-2xl rounded-xl w-full max-w-md p-8 space-y-6">
+    <h1 class="text-3xl font-bold text-center text-purple-700">Welcome to RawMate</h1>
+    <p class="text-center text-gray-500 text-sm">Login as Vendor, Supplier, or Admin</p>
+
+    <form class="space-y-4">
+      <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+      <input type="password" placeholder="Password" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+
+      <select class="w-full px-4 py-3 border border-gray-300 rounded text-gray-700">
+        <option value="">Select Role</option>
+        <option value="vendor">Vendor</option>
+        <option value="supplier">Supplier</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit" class="bg-purple-700 text-white w-full py-3 rounded font-semibold hover:bg-purple-800 transition duration-300">
+        Login
+      </button>
+    </form>
+
+    <div class="text-center text-sm text-gray-500 mt-4">
+      Don't have an account?
+      <a href="#" class="text-purple-600 hover:underline">Register here</a>
+    </div>
+  </div>
+
+</body>
+</html>
